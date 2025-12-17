@@ -1,14 +1,7 @@
 import React from "react";
 import MemberCard from "./MemberCard";
 
-export interface Member {
-  name: string;
-  role: string;
-  photo: string; // public path, e.g., /assets/members/alice.svg
-  bio: string;
-}
-
-const members: Member[] = [
+const members = [
   {
     name: "Alice Johnson",
     role: "Team Lead",
@@ -29,7 +22,7 @@ const members: Member[] = [
   },
 ];
 
-const Team: React.FC = () => {
+const Team = () => {
   return (
     <section className="team-section">
       <header className="team-header">
